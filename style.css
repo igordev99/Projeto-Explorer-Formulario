@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #E5E5E5;
+  font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 368px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #535971;
+}
+
+.page {
+  width: 736px;
+  margin: auto;
+}
+
+header {
+  width: 319px;
+
+  margin-top: 74px;
+}
+
+header h1 {
+  margin-top: 140px;
+  font-family: 'Staatliches', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  color: #FFFFFF;
+
+  margin-bottom: 24px;
+}
+
+header p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  width: 417px;
+  height: 46px;
+
+  color: #FFFFFF;
+}
+
+form {
+  margin-top: 58px;
+  background: #FAFAFC;
+  border-radius: 20px 20px 0 0;
+  min-height: 300px;
+
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  font-style: normal;
+  line-height: 34px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+p {
+  font-family: 'Staatliches', cursive;
+  color: #535971;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  width: 100%;
+
+}
+
+fieldset legend {
+  color: #535971;
+  font-family: 'Staatliches', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+
+  width: 100%;
+
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label,
+.checkbox-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4E4958;
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 7px;
+
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #a9a7af;
+}
+
+.input-wrapper label span:hover {
+  color: #6c6a71;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  background: #FAFAFC;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  height: 56px;
+
+  padding: 0 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #6c6a71;
+}
+
+.input-wrapper textarea {
+  padding: 0;
+  height: 168px;
+}
+
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+
+}
+
+.col-2>div:nth-child(1) {
+  width: 300px;
+}
+
+.col-2>div:nth-child(2) {
+  width: 300px;
+}
+
+
+.col-3 {
+  display: flex;
+  gap: 20px;
+}
+
+.col-3>div:nth-child(1) {
+  width: 100%;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin: 0;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+
+
+.checkbox-wrapper input:focus+label::before {
+  outline: 2px solid black;
+}
+
+footer {
+  background: #535971;
+
+  height: 136px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 64px;
+
+  margin-bottom: 100px;
+
+  border-top: 1px solid #D6D6D6;
+  border-radius: 0 0 20px 20px;
+}
+
+footer .button {
+  width: 608px;
+  height: 55.65px;
+  background: #FF5374;
+  border: 0;
+  border-radius: 20px;
+
+  font-family: 'Staatliches';
+  font-style: normal;
+  padding: 15px 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+
+
+  color: #FFFFFF;
+}
+
+footer .button:hover {
+  background: #ff4369;
+}
+
+input:invalid {
+  border: 1px solid #FF1010;
+}
